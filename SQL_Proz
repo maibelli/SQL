@@ -1,0 +1,42 @@
+Aqui estão os comandos SQL para criar o banco de dados "ESCOLA" e a tabela "ALUNO" com os atributos solicitados:
+
+Criar Banco de Dados
+```
+CREATE DATABASE ESCOLA;
+```
+
+Selecionar Banco de Dados
+```
+USE ESCOLA;
+```
+
+Criar Tabela ALUNO
+```
+CREATE TABLE ALUNO (
+  ID INT PRIMARY KEY,
+  NOME VARCHAR(100) NOT NULL,
+  EMAIL VARCHAR(100) UNIQUE NOT NULL,
+  ENDERECO VARCHAR(200) NOT NULL
+);
+```
+
+Explicação:
+
+1. `CREATE DATABASE ESCOLA;` cria o banco de dados.
+2. `USE ESCOLA;` seleciona o banco de dados para uso.
+3. `CREATE TABLE ALUNO (` cria a tabela.
+4. `ID INT PRIMARY KEY` define a chave primária.
+5. `NOME VARCHAR(100) NOT NULL` adiciona o atributo "nome".
+6. `EMAIL VARCHAR(100) UNIQUE NOT NULL` adiciona o atributo "e-mail" com restrição de unicidade.
+7. `ENDERECO VARCHAR(200) NOT NULL` adiciona o atributo "endereço".
+
+Comandos adicionais:
+- Para inserir dados na tabela: `INSERT INTO ALUNO (ID, NOME, EMAIL, ENDERECO) VALUES ('valor_ID', 'nome', 'email', 'endereço');`
+- Para visualizar a tabela: `SELECT * FROM ALUNO;`
+- Para alterar a tabela: `ALTER TABLE ALUNO ADD/COLUMN/modify atributo;`
+- Para excluir a tabela: `DROP TABLE ALUNO;`
+
+Observações:
+- Certifique-se de executar os comandos na ordem correta.
+- Verifique a compatibilidade com o seu sistema de gerenciamento de banco de dados (DBMS).
+- Utilize senhas seguras e backup regularmente.
